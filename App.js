@@ -6,7 +6,7 @@
  * @flow
  */
 
-import React from 'react';
+import React, {useEffect, useCallback} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -24,7 +24,18 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const App: () => React$Node = () => {
+const App = () => {
+  useEffect(() => {
+    // console.log('OKe');
+    // sdmmdkskd
+    // sdksdkjs
+    // sdjhjsdn
+  }, []);
+
+  const cobasaya = useCallback(() => {
+    // console.log('siap');
+  }, []);
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
