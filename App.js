@@ -6,7 +6,7 @@
  * @flow
  */
 
-import React, {useEffect, useCallback} from 'react';
+import React, {useEffect, useCallback, useState} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -25,15 +25,24 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const App = () => {
-  useEffect(() => {
-    // console.log('OKe');
-    // sdmmdkskd
-    // sdksdkjs
-    // sdjhjsdn
-  }, []);
+  const [state, setState] = useState({
+    nama: '',
+    alamat: '',
+  });
 
   const cobasaya = useCallback(() => {
-    // console.log('siap');
+    setState(prev => ({
+      ...prev,
+      nama: 'erik',
+    }));
+  }, []);
+
+  useEffect(() => {
+    // cobasaya();
+    erik = () => {
+      console.log('ok');
+    };
+    erik();
   }, []);
 
   return (

@@ -3,7 +3,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: 'plugin:react/recommended',
+  extends: ['plugin:react/recommended'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -21,7 +21,7 @@ module.exports = {
     'array-bracket-newline': 'error',
     'array-bracket-spacing': ['error', 'never'],
     'array-callback-return': 'error',
-    'array-element-newline': 'error',
+    'array-element-newline': ['error', {minItems: 3}],
     'arrow-body-style': 'off',
     'arrow-parens': 'error',
     'arrow-spacing': [
@@ -113,7 +113,7 @@ module.exports = {
     'no-caller': 'error',
     'no-catch-shadow': 'error',
     'no-confusing-arrow': 'error',
-    'no-console': 'error',
+    'no-console': 'warn',
     'no-constructor-return': 'error',
     'no-continue': 'error',
     'no-div-regex': 'error',
